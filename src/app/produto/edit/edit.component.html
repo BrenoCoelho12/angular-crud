@@ -1,0 +1,15 @@
+<h3>Cadastro de Produtos</h3>
+
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label>Descrição</label>
+    <input type="text" class="form-control" [(ngModel)]="produto.descricao" name="descricao" placeholder="Escreva a descrição do seu produto."/>
+  </div>
+
+  <div class="form-group">
+    <label>Valor</label>
+    <input type="text" class="form-control" [(ngModel)]="produto.valor" name="valor" placeholder="Informe o valor do seu produto."/>
+  </div>
+
+  <button class="btn btn-primary">Gravar</button>
+</form>

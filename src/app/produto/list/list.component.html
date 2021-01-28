@@ -1,0 +1,33 @@
+<app-home></app-home>
+
+<div class="container" style="margin-top: 20px;">
+    <div class="row">
+        <div class="col-md-6">
+            <app-edit></app-edit>
+        </div>
+        <div class="col-md-6">
+            <h3>Lista de Produtos</h3>
+            <table class="table table-hover table-striped">
+                <thead>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let produto of produtos | async"> <!--Toda lista observable tem que ter o | async-->
+                    <td>{{produto.descricao}}</td>
+                    <td>{{produto.valor}}</td>
+                    <td>
+                        <button type="button" class="btn btn-info" (click)="edit(produto, produto.key)">Editar</button>
+                        <button type="button" class="btn btn-danger ml-5" (click)="delete(produto.key)">Excluir</button>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>  
+        </div>
+    </div>
+
+    
+
+</div>
+

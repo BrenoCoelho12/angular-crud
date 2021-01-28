@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row text-center">
+       <h2>Lista de Produtos</h2> 
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <th>Id</th>
+        <th>Descrição</th>
+        <th>Valor</th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let produto of produtos">
+            <td>{{produto.id}}</td>
+            <td>{{produto.descricao}}</td>
+            <td>{{produto.valor}}</td>
+            <td><button (click)="onEdit(produto)">Editar</button></td>
+            <td><button (click)="onDelete(produto)">Salvar</button></td>
+        </tr>
+    </tbody>
+</table>
