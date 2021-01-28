@@ -13,6 +13,9 @@ export class ProdutoDataService {
   produtoAtual = this.produtoSource.asObservable();
 
   obtemProduto(produto: any, key: string){
+    console.log("entrou no obtemProduto");
+    console.log(produto);
+    console.log(key);
     this.produtoSource.next({produto: produto, key: key})
   }
 }

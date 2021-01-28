@@ -1,0 +1,10 @@
+html,body{ height: 100%; }
+.background{
+   height: 100%;
+   background: url(https://images.app.goo.gl/dgFcEsPZyLpRUJgk8) no-repeat center center fixed;
+   background-size: cover; /*Css padrão*/
+   -webkit-background-size: cover; /*Css safari e chrome*/
+   -moz-background-size: cover; /*Css firefox*/
+   -ms-background-size: cover; /*Css IE não use mer#^@%#*/
+   -o-background-size: cover; /*Css Opera*/
+}

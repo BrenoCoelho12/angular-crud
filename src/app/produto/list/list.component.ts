@@ -24,6 +24,9 @@ export class ListComponent implements OnInit {
   }
 
   edit(produto: Produto, key: string){
+    console.log("entrou no edit em list.component.ts");
+    console.log(produto);
+    console.log(key);
     this._produtoDataService.obtemProduto(produto, key);
   }
 
